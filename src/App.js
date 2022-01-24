@@ -6,7 +6,7 @@ import {Earnings} from "./component/Salary Calculator";
 
 function App() {
   return (
-    <div className="">
+      <div className="container">
       <Earnings/>
     </div>
   );

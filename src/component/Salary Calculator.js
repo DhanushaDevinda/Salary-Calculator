@@ -117,14 +117,11 @@ export class Earnings extends Component {
 
     removeDeductionRow = (index) => {
         this.setState({
-            DeductionsArray: this.state.DeductionsArray.splice(index, 1),
-            countDedArray: this.state.countDedArray.splice(index, 1),
+            countDedArray: this.state.countDedArray.slice(0, -1)
         });
-        console.log('DED', index, this.state.DeductionsArray)
-        console.log('DED', index, this.state.countDed)
         this.state.TotalDeductionsValue = parseInt(this.state.TotalDeductionsValue) - parseInt(this.state.DeductionsValue);
-        // console.log(this.state.DeductionsArray)
-        // console.log(this.state.TotalDeductionsValue)
+        console.log(this.state.DeductionsArray)
+        console.log(this.state.TotalDeductionsValue)
 
     };
 
@@ -186,14 +183,14 @@ export class Earnings extends Component {
 
     render() {
         return (
-            <div className="float-center">
+
                 <div className="row">
                     <div className="col-sm-6">
                         <div className="p-3 mb-2 bg-light text-dark rounded">
                             <div className="row">
                                 <div className="col-sm-10">
 
-                                    <h5 className="text-left">Calculate Your Salary</h5>
+                                    <h5 className="font-weight-bold">Calculate Your Salary</h5>
                                     <br/>
                                 </div>
                                 <div className="col-sm-2">
@@ -284,7 +281,7 @@ export class Earnings extends Component {
                             <div className="row">
                                 <div className="col-sm-10">
 
-                                    <h5 className="text-left">Calculate Your Salary</h5>
+                                    <h5 className="font-weight-bold text-left">Calculate Your Salary</h5>
                                     <br/>
                                 </div>
                             </div>
@@ -342,6 +339,7 @@ export class Earnings extends Component {
                                 </div>
 
                                 <div className="col-sm-5">
+
                                     <h6 className="text-right">{this.state.EPF12}</h6>
                                     <h6 className="text-right">{this.state.ETF3}</h6>
                                     <br/>
@@ -358,7 +356,7 @@ export class Earnings extends Component {
 
                 </div>
 
-            </div>
+
         );
     }
 
