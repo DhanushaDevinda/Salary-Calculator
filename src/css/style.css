@@ -1,0 +1,177 @@
+ .ui.grid {
+     margin: 0px !important;
+ }
+
+ .row {
+     padding: 0px !important
+ }
+
+ .gap {
+     column-gap: 16px;
+     row-gap: 16px;
+     display: flex !important;
+     justify-content: center !important;
+ }
+
+ .flex-space-between {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .flex-center {
+     display: flex;
+     align-items: center;
+     cursor: pointer;
+ }
+
+ .left-container {
+     padding: 0px !important;
+     background: #FAFAFA;
+     border: 1px solid #E0E0E0;
+     border-radius: 8px;
+     width: 680px !important;
+     height: 614px !important;
+ }
+
+ .right-container {
+     padding: 0px !important;
+     background: #FFFFFF;
+     border: 1px solid #E0E0E0;
+     border-radius: 8px;
+     width: 480px !important;
+     height: 614px !important;
+ }
+
+ .container-space {
+     margin: 24px 32px
+ }
+
+ .border {
+     border: 0.78437px solid #E0E0E0;
+     border-radius: 4px;
+     padding: 16px 20px;
+ }
+
+ /* checkbox */
+
+ .ui.checkbox input:checked~label::before,
+ .ui.checkbox input:checked:focus~label::before {
+     background: #0052EA !important;
+ }
+
+ .ui.checkbox input:checked~.box:after,
+ .ui.checkbox input:checked~label:after {
+     opacity: 1 !important;
+
+     color: rgba(255, 255, 255, 0.95) !important;
+ }
+
+ .ui.checkbox input:checked~.box:before,
+ .ui.checkbox input:checked~label:before {
+     border: none !important;
+ }
+
+
+
+ /* headers */
+
+ .heading-4 {
+     font-family: 'Inter' !important;
+     font-style: normal !important;
+     font-weight: 700 !important;
+     font-size: 20px !important;
+     line-height: 32px !important;
+     letter-spacing: -0.022px !important;
+     color: #000000 !important;
+ }
+
+ .Body-Large-Semibold {
+     font-family: 'Inter' !important;
+     font-style: normal !important;
+     font-weight: 600 !important;
+     font-size: 16px !important;
+     line-height: 24px !important;
+     letter-spacing: -0.1px !important;
+     color: #000000 !important;
+ }
+
+ .Body-Default-Semibold {
+     font-family: 'Inter';
+     font-style: normal;
+     font-weight: 600;
+     font-size: 14px;
+     line-height: 20px;
+     letter-spacing: 0.2px;
+     color: #757575;
+
+
+ }
+
+ .Body-Small {
+     font-family: 'Inter' !important;
+     font-style: normal !important;
+     font-weight: 400 !important;
+     font-size: 12px !important;
+     line-height: 20px !important;
+     text-align: left !important;
+     color: #757575 !important;
+ }
+
+ .Button-Text {
+     font-family: 'Inter';
+     font-style: normal;
+     font-weight: 500;
+     font-size: 14px;
+     line-height: 20px;
+     color: #0052EA;
+ }
+
+ /* margin */
+
+ .ml-6 {
+     margin-left: 6px;
+ }
+
+ .mb-24 {
+     margin-bottom: 24px;
+ }
+
+ .mb-8 {
+     margin-bottom: 8px;
+
+ }
+
+ .mt-24 {
+     margin-top: 24px;
+
+ }
+
+ .mt-32 {
+     margin-top: 32px;
+
+ }
+
+ .mb-16 {
+     margin-bottom: 16px;
+
+ }
+
+ .pl-0 {
+     padding-left: 0px !important;
+
+ }
+
+ .mb-132 {
+     margin-bottom: 60px;
+
+ }
+
+ .mt-132 {
+     margin-top: 60px;
+
+ }
+
+ .close-btn-margin {
+     margin-left: 2px;
+     margin-right: 16px;
+ }

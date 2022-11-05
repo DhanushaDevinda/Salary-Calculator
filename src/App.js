@@ -1,14 +1,17 @@
 import './App.css';
-import { BrowserRouter as Router , Route } from 'react-router-dom';
-
-import {Earnings} from "./component/Salary Calculator";
-
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Calculator from './component/Calculator';
+import Layout from './component/Layout';
 
 function App() {
   return (
-      <div className="container">
-      <Earnings/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route path="calculator" element={<Calculator />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
